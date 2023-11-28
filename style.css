@@ -1,5 +1,17 @@
 :root {
   --background-color: #e2e7f0;
+
+  --stone-50: #fafaf9;
+  --stone-100: #f5f5f4;
+  --stone-200: #e7e5e4;
+  --stone-300: #d6d3d1;
+  --stone-400: #a8a29e;
+  --stone-500: #78716c;
+  --stone-600: #57534e;
+  --stone-700: #44403c;
+  --stone-800: #292524;
+  --stone-900: #1c1917;
+  --stone-950: #0c0a09;
 }
 
 * {
@@ -21,16 +33,15 @@
 }
 
 header {
-  color: black;
   grid-area: 1 / 2 / 2 / 3;
+  padding: 16px;
 
   display: flex;
-  gap: 32px;
+  gap: 64px;
 }
 
 .search {
   flex: 1 1 auto;
-  padding: 16px;
 
   display: flex;
   justify-content: stretch;
@@ -39,6 +50,8 @@ header {
 
 .searchTerm {
   flex: 1 1 auto;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .headerLinks {
@@ -50,15 +63,19 @@ header {
 
 
 nav {
-  color: black;
   grid-area: 2 / 2 / 3 / 3;
+  padding: 16px;
 
   display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
-  display: flex;
   list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 aside {
@@ -69,8 +86,9 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 32px;
   padding: 16px;
+  padding-right: 32px;
 }
 
 aside > * {
@@ -79,7 +97,33 @@ aside > * {
 
 aside ul {
   list-style-type: none;
+  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 8px;
 }
+
+aside ul li {
+  gap: 8px;
+}
+
+aside ul li a {
+  color: white;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+
+  gap: 20px;
+
+  text-decoration: none;
+}
+
 
 
 main {
