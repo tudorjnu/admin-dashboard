@@ -24,6 +24,20 @@ body, body .container {
   width: 100vw;
 }
 
+.material-symbols-rounded {
+  color: white;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+i {
+  display: block;
+}
+
+
 .container {
   text-align: center;
   background-color: var(--background-color);
@@ -31,8 +45,6 @@ body, body .container {
   display: grid;
   grid-template-columns: minmax(100px 200px) 1fr;
   grid-template-rows: 100px 100px 1fr;
-
-  /* height: 100vw; */
 }
 
 .container div {
@@ -57,24 +69,33 @@ header {
   gap: 4px;
 }
 
-.search  .searchTerm {
+.search .searchTerm {
   flex: 1 1 auto;
   max-width: 600px;
   min-width: 300px;
   height: 25px;
+
+  padding: 0 15px 0 15px;
+
+  display: block;
+  border-radius: 100px;
+  outline-offset: -8px;
 }
 
-.search .fa-magnifying-glass {
+header .material-symbols-rounded {
   color: black;
 }
 
 .search .searchButton {
-  aspect-ratio: 1 / 1;
   border: none;
   background: transparent;
   text-align: center;
   cursor: pointer;
   font-size: 20px;
+}
+
+.search .searchButton i {
+  display: block;
 }
 
 .headerLinks {
@@ -83,6 +104,11 @@ header {
   align-items: center;
   gap: 8px;
 }
+
+.headerLinks i {
+  display: block;
+}
+
 
 
 nav {
@@ -113,10 +139,6 @@ aside {
   padding: 16px;
   padding-right: 32px;
 }
-
-aside > * {
-  color: white;
-} 
 
 aside ul {
   list-style-type: none;
