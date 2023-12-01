@@ -277,14 +277,21 @@ main {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
-.trending .user {
+.trending .trendingHeader {
+  text-align: left;
+  padding-bottom: 8px;
 }
 
+.trending > .trendingContainer {
+  background-color: white;
+  border-radius: 8px;
 
-.trending > * {
-  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
 }
