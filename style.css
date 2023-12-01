@@ -52,7 +52,6 @@ i {
   color: black;
 }
 
-header {
 .siteHeader{
   grid-area: 1 / 2 / 2 / 3;
   padding: 16px;
@@ -257,13 +256,20 @@ main {
   align-items: stretch;
 }
 
-.announcements .announcement {
+  .announcements > .announcementsContainer > .announcement > p {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 100;
 }
 
-.announcements > * {
-  font-size: 10px;
+.announcements > .announcementsContainer > .announcement > .title {
+  font-size: 11px;
+  font-weight: bold;
 }
 
+.announcements > .announcementsContainer > .announcementSeparator {
+  color: #e2e7f0;
+}
 
 .trending {
   grid-area: 2 / 2 / 3 / 3;
