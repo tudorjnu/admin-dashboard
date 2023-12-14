@@ -19,24 +19,31 @@
         <button type="submit" class="searchButton">
           <i class="material-symbols-rounded">search</i>
         </button>
-        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <input type="text" class="searchTerm">
       </div>
       <ul class="headerLinks">
         <item><i class="material-symbols-rounded">notifications_active</i></item>
-        <item class="icon">Icon</item>
+        <item class="icon"><i class="material-symbols-rounded">person</i></item>
         <item class="logo">Morgan Oakley</item>
       </ul>
     </header>
 
     <nav>
-      <div>
-        <p>Hi there,</p>
+      <div class="navWelcome">
+        <i class="material-symbols-rounded userIcon">person</i>
+        <span class="navWelcomeMessage">
+          <p>Hi there,</p>
+        </span>
+        <span class="navUser">
+          <p>Morgan Oakley (@morgan)</p>
+        </span>
+
       </div>
 
       <ul>
-        <li>New</li>
-        <li>Upload</li>
-        <li>Share</li>
+        <li><button>New</button></li>
+        <li><button>Upload</button></li>
+        <li><button>Share</button></li>
       </ul>
     </nav>
 
@@ -122,37 +129,37 @@
 
         <div class="projectsContainer">
           <div class="project">
-            <p class="projectHeader">Article Title</p>
+            <h2 class="projectHeader">Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
           </div>
           <div class="project">
-            <p class="projectHeader">Article Title</p>
+            <h2 class="projectHeader">Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
           </div>
           <div class="project">
-            <p class="projectHeader">Article Title</p>
+            <h2 class="projectHeader">Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
           </div>
           <div class="project">
-            <p class="projectHeader">Article Title</p>
+            <h2 class="projectHeader">Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
           </div>
           <div class="project">
-            <p class="projectHeader">Article Title</p>
+            <h2 class="projectHeader">Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
           </div>
           <div class="project">
-            <p class="projectHeader">Article Title</p>
+            <h2 class="projectHeader">Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -169,7 +176,7 @@
         <div class="announcementsContainer">
 
           <div class="announcement">
-            <p class="title">Article Title</p>
+            <h2 class="title">Site Maintanance</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -178,7 +185,7 @@
           <hr class="announcementSeparator">
 
           <div class="announcement">
-            <p class="title">Article Title</p>
+            <h2 class="title">Community Share Day</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -187,7 +194,7 @@
           <hr class="announcementSeparator">
 
           <div class="announcement">
-            <p class="title">Article Title</p>
+            <h2 class="title">Updated Privacy Policy</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -201,23 +208,45 @@
         </header>
 
         <div class="trendingContainer">
-          <div class="user">
-            <div class="icon"> </div>
-            <p class="username">username</p>
-            <p class="name">name</p>
-          </div>
+          <a class="trendingUser">
+            <i class="material-symbols-rounded trendingUserIcon">person</i>
+            <span class="trendingUsername">
+              <p>tegan</p>
+            </span>
+            <span class="trendingDescription">
+              <p>World Peace Builder</p>
+            </span>
+          </a>
 
-          <div class="user">
-            <div class="icon"> </div>
-            <p class="username">username</p>
-            <p class="name">name</p>
-          </div>
+          <a class="trendingUser">
+            <i class="material-symbols-rounded trendingUserIcon">person</i>
+            <span class="trendingUsername">
+              <p>morgan</p>
+            </span>
+            <span class="trendingDescription">
+              <p>Super Cool Project</p>
+            </span>
+          </a>
 
-          <div class="user">
-            <div class="icon"> </div>
-            <p class="username">username</p>
-            <p class="name">name</p>
-          </div>
+          <a class="trendingUser">
+            <i class="material-symbols-rounded trendingUserIcon">person</i>
+            <span class="trendingUsername">
+              <p>kendall</p>
+            </span>
+            <span class="trendingDescription">
+              <p>Life Changing App</p>
+            </span>
+          </a>
+
+          <a class="trendingUser">
+            <i class="material-symbols-rounded trendingUserIcon">person</i>
+            <span class="trendingUsername">
+              <p>alex</p>
+            </span>
+            <span class="trendingDescription">
+              <p>No Traffic Maker</p>
+            </span>
+          </a>
         </div>
       </section>
     </main>
